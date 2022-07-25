@@ -4,56 +4,255 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Medicinska föreningen örebro</title>
+    <title>Örebro Ekonomitjänst</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-main.css" />
   </head>
   <body>
     <section class="section-hero">
-      <header>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="#">Tjänster</a></li>
-            <li><a href="#">Om oss</a></li>
-            <li><a href="#">Kontakt</a></li>
-          </ul>
-          <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-        </nav>
-        <div class="overlay-text">
-          <div class="overlay-text-content">
-            <h1>
-              Välkommen till <br />
-              Örebro Ekonomitjänst
-            </h1>
-
-            <h2>
-              Med fokus på att vara en <br />
-              personlig partner för din <br />
-              företagsekonomi
-            </h2>
-
-            <a href="#" class="btn">Läs mer</a>
-          </div>
+      <header class="primary-header">
+        <div>
+          <img class="logo" src="./images/LOGGA_Örebro_Ekonomitjänst.jpg" alt=""> 
         </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false"></button> <!-- aria-controls är vad knappen kontrollerar, aria-expanded är att naven ska vara inskjuten när sidan först laddar -->
+
+        <nav>
+          <ul id="primary-nav" class="primary-nav" data-visible="false">
+            <li class="active">
+              <a href="index.html">
+                Home
+              </a>
+  
+            </li>
+            <li>
+              <a href="index.html">
+               Tjänster
+              </a>
+  
+            </li>
+            <li>
+              <a href="index.html">
+               Om oss
+              </a>
+  
+            </li>
+            <li>
+              <a href="index.html">
+                    Kontakt
+              </a>
+  
+            </li>
+          </ul>
+        </nav>
+    
       </header>
+
+      
+    
     </section>
     <main>
-      <section class="about">
-        <div class="card"></div>
-        <div class="card"></div>
+      <div class="row-about">
+        <div class="column-about" id="about-pic"></div>
+        <div class="column-about second-about">
+          <h1>Funderar du på bokföringstjänst?</h1>
+          <p>
+            Med nära personlig kontakt och tillgänglighet erbjuder jag er
+            lösningar inom redovisning, bokslut, årsredovisning, deklarationer,
+            avtalsfrågor, bolagsbildning och skattefrågor. Är ni i Örebro så
+            kommer jag och hämtar redovisningsunderlaget en gång i månaden så
+            sparar ni tid eller vill ni skicka går det också bra. Har inte ni
+            verksamhet i Örebro så fungerar det utmäkt att posta
+            redovisningsunderlaget.
+          </p>
+          <a href="#" class="btn_2"
+          >Kontakta mig
+          </a>
+        </div>
+      </div>
+      <section id="features">
+        <div class="container">
+          <div class="features_top">
+            <h1>Tjänster</h1>
+            <p>
+              Min målsättning är att växa tillsammans med mina klienter. Dialogen mellan oss är väldigt viktig. Ni ska ha bra kännedom om läget i ert företag gällande dess ekonomiska ställning och utveckling. Därför sköter jag inte bara siffrorna utan för mig är det lika viktigt att informera mina klienter om deras ekonomiska ställning samt för- respektive nackdelar med olika förändringar som kan tänkas uppstå.
+            </p>
+          </div>
+          <div class="features_container">
+            <div class="feature_item">
+              <span class="material-icons"> published_with_changes </span>
+              <div class="featureItem_info">
+                <h4>Löpande bokföring</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Alias enim, illum rem cupiditate consectetur cum porro.
+                </p>
+              </div>
+            </div>
+        
+              <div class="feature_item">
+                <span class="material-icons"> receipt_long </span>
+                <div class="featureItem_info">
+                  <h4>Bokslut och årsredovisning</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias enim, illum rem cupiditate consectetur cum porro.
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature_item">
+                <span class="material-icons"> checklist_rtl </span>
+                <div class="featureItem_info">
+                  <h4>Deklarationer</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias enim, illum rem cupiditate consectetur cum porro.
+                  </p>
+                </div>
+              </div>
+              <div class="feature_item">
+                <span class="material-icons"> question_answer
+                </span>
+                <div class="featureItem_info">
+                  <h4>Rådgivning</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias enim, illum rem cupiditate consectetur cum porro.
+                  </p>
+                </div>
+              </div>
+              <div class="feature_item">
+                <span class="material-icons"> outlined_flag </span>
+                <div class="featureItem_info">
+                  <h4>Starta företag</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias enim, illum rem cupiditate consectetur cum porro.
+                  </p>
+                </div>
+              </div>
+              <div class="feature_item">
+                <span class="material-icons"> payments
+                </span>
+                <div class="featureItem_info">
+                  <h4>Löner</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias enim, illum rem cupiditate consectetur cum porro.
+                  </p>
+                </div>
+              </div>
+         
+        </div>
       </section>
+      <section class="contact">
+        <div class="contact_content">
+          <h2>Kontakt</h2>
+          <p>Tveka inte att ta kontakt med mig!</p>
+        </div>
+        <div class="contact_container">
+          <div class="contactInfo">
+            <div class="box">
+              <div class="contact_icon"><span class="material-icons">
+                location_on
+                </span></div>
+              <div class="contact_text"><h3>
+                Adress
+              </h3><p>
+                Svartå Bangata 2 <br> 702 32 <br> Örebro <br> Mån-Fredag 09:00-16:30
+              </p></div>
+              
+            </div>
+            <div class="box">
+              <div class="contact_icon"><span class="material-icons">
+                phone
+                </span></div>
+              <div class="contact_text"><h3>
+                Telefon
+              </h3><p>
+                073- 26 26 083
+              </p></div>
+              
+            </div>
+            <div class="box">
+              <div class="contact_icon"><span class="material-icons">
+                email
+                </span>
+                </div>
+              <div class="contact_text"><h3>
+                E-mail
+              </h3><p>
+                info@orebroekonomitjanst.se
+              </p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="contactForm">
+            <form>
+              <h2>Skicka meddelande</h2>
+              <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span>Namn</span>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span>E-post</span>
+              </div>
+              <div class="inputBox">
+                <textarea required="required"></textarea>
+                <span>Skriv ditt meddelande..</span>
+              </div>
+              <div class="inputBox">
+                <input type="submit" name="" value="Skicka">
+              </div>
+
+
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-content
+        ">
+      <h3>Örebro Ekonomitjänst</h3>
+    <p>Kanitta Walterdahl <br>
+      Redovisningskonsult <br>
+      www.orebroekonomitjanst.se</p>
+    <ul class="socials">
+      <li><a href="#"></a><ion-icon name="logo-facebook" class="facebook"></ion-icon></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p>copyright &copy;2022 Örebro Ekonomitjänst. Designed by <span>www.netleap.se</span></p>
+  </div>
+      </footer>
     </main>
 
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+   
   </body>
 </html>
